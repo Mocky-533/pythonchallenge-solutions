@@ -1,6 +1,6 @@
 import calendar
 
-front, count = 2000, 0
+front, count = 2020, 0
 while True:
     year = front + 6
     if calendar.isleap(year) and calendar.weekday(year, 1, 1) == 3:
