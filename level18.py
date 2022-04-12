@@ -20,11 +20,11 @@ print(f"l2: {l2}")
 print(f"common: {common}")
 with open('assets/lvl18_1.png', 'wb') as f1:
     for line in l1:
-        f1.write(bytes([int(o, 16) for o in line.strip().split(" ") if o]))
+        f1.write(bytes([int(o, 16) for o in line.split(" ") if o]))
 with open('assets/lvl18_2.png', 'wb') as f2:
     for line in l2:
-        f2.write(bytes([int(o, 16) for o in line.strip().split(" ") if o]))
+        f2.write(bytes([int(o, 16) for o in line.split(" ") if o]))
 with open('assets/lvl18_3.png', 'wb') as f3:
     for line in common:
-        f3.write(bytes([int(o, 16) for o in line.strip().split(" ") if o]))
+        f3.write(bytes([int(o, 16) for o in line.split(" ") if o]))
 
