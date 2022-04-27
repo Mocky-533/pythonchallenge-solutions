@@ -1,6 +1,6 @@
 import zlib, bz2
 # from collections import Counter
-with open('assets/21/package.pack', 'rb') as f:
+with open('assets/21/package.pack', 'rb') as f: # unzip the 21.zip first
     data = f.read()
 logs = []
 while True:
