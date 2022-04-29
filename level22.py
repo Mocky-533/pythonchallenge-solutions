@@ -7,7 +7,7 @@ coords = []
 for frame in frames:
     # stat = ImageStat.Stat(frame)
     # print(stat.extrema)
-    for n_y in range(frame.size[1]):
+    for n_y in range(97, frame.size[1]):
         pixels = [frame.getpixel((n_x, n_y)) for n_x in range(frame.size[0])]
         try:
             pos_x = pixels.index(8)
