@@ -13,7 +13,7 @@ def BFS(img: np.ndarray, entrance: np.ndarray, exit:np.ndarray):
     while queue:
         current = queue.pop(0) # get the head of the queue
         if current == entrance:
-            break # early break
+            break # early stop
         for dir in directions:
             pos = (current[0] + dir[0], current[1] + dir[1])
             if inpic(pos) and pos not in visited and not np.array_equal(img[pos], white):
